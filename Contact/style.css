@@ -1,0 +1,62 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  background: white;
+}
+
+nav .logo .img img {
+  width: 70px;
+  height: 70px;
+}
+nav .link ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .link ul li {
+  list-style: none;
+}
+nav .link ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+}
+nav .link ul li a::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background-color: rgb(177, 9, 9);
+  position: absolute;
+  bottom: 23px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s;
+}
+nav .link ul li a:hover::after {
+  width: 70px;
+}
+nav .search a {
+  flex: 1;
+  background-color: rgb(177, 9, 9);
+  color: white;
+  border: 2px solid rgb(177, 9, 9);
+  padding: 14px;
+  border-radius: 50px;
+
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+nav .search a:hover,
+nav .search a:focus {
+  background-color: #fff;
+  border: 2px solid black;
+  color: black;
+}
