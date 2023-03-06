@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  background: white;
+}
+
+nav .logo .img img {
+  width: 70px;
+  height: 70px;
+}
+nav .link ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .link ul li {
+  list-style: none;
+}
+nav .link ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+}
+nav .link ul li a::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background-color: rgb(177, 9, 9);
+  position: absolute;
+  bottom: 23px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s;
+}
+nav .link ul li a:hover::after {
+  width: 70px;
+}
+nav .search a {
+  flex: 1;
+  background-color: rgb(177, 9, 9);
+  color: white;
+  border: 2px solid rgb(177, 9, 9);
+  padding: 14px;
+  border-radius: 50px;
+
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+nav .search a:hover,
+nav .search a:focus {
+  background-color: #fff;
+  border: 2px solid black;
+  color: black;
+}
+
+main .heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3%;
+  text-align: center;
+  /* align-items: center; */
+}
+
+main .heading span h3 {
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  width: 50%;
+  margin: 0 auto;
+  /* font-size: ; */
+}
+main .heading p {
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-top: 3%;
+}
+main .counsel {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+main .counsel .talk fieldset {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  border: 1px solid rgb(126, 2, 2);
+}
+main .counsel .talk fieldset h3 {
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(126, 2, 2);
+}
+main .counsel .talk fieldset p {
+  width: 90%;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 5%;
+  font-weight: bold;
+}
+main .counsel .talk fieldset button {
+  padding: 10px;
+  width: 25%;
+  margin-top: 2%;
+  background-color: rgb(126, 2, 2);
+  color: white;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid rgb(126, 2, 2);
+  cursor: pointer;
+}
+main .counsel .talk fieldset button a {
+  color: white;
+  text-decoration: none;
+}
+.access {
+  position: relative;
+  top: 140px;
+  padding: 5px;
+}
+.access fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 68%;
+  height: 60%;
+  margin: 0 auto;
+  background-color: rgb(126, 2, 2);
+  border: 1px solid rgb(126, 2, 2);
+  padding: 50px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+}
+.access fieldset p {
+  text-align: center;
+  width: auto;
+  margin-top: 2%;
+  line-height: 25px;
+}
+.access fieldset .signup {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+.access fieldset .signup #text {
+  width: 350px;
+  padding: 17px;
+  border-radius: 30px;
+  border: 1px solid white;
+  /* margin-top: 5%; */
+}
+.access fieldset .signup button {
+  padding: 14px;
+  border-radius: 30px;
+
+  width: 200px;
+  background-color: white;
+  border: 1px solid rgb(126, 2, 2);
+  margin-left: 3%;
+  /* margin-top: 8%; */
+}
+.access fieldset .signup button a {
+  text-decoration: none;
+  color: rgb(126, 2, 2);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+::placeholder {
+  color: rgb(126, 2, 2);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+footer {
+  height: 70vh;
+  background-color: black;
+  color: white;
+}
+
+footer .information {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+}
+
+footer .information fieldset {
+  width: 82%;
+  padding: 20px;
+  height: 60%;
+  border-radius: 20px;
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+footer .information fieldset .connect {
+  display: flex;
+  flex-direction: column;
+}
+footer .information fieldset .connect h3 {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+}
+
+footer .information fieldset .connect .conp {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 7%;
+  justify-content: center;
+}
+footer .information fieldset .connect .conp p {
+  padding-bottom: 20px;
+}
+footer .information fieldset .connect .conp .address {
+  width: 80%;
+}
+footer .information fieldset .logo img {
+  width: 80px;
+  height: 80px;
+}
+footer .information fieldset .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: -50px;
+}
+footer .information fieldset .logo .logo_text {
+  margin-top: 5%;
+}
+footer .information fieldset .logo .logo_text p {
+  width: 65%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+footer .information fieldset .logo .socials {
+  margin-top: 2%;
+}
+.fa-envelope,
+.fa-brands {
+  margin: 10px;
+  color: black;
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid;
+  background-color: white;
+  border-radius: 100%;
+}
+
+footer .information fieldset .nav h3 {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+}
+
+footer .information fieldset .nav .links {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+  justify-content: center;
+  /* align-items: right; */
+  text-align: right;
+}
+
+footer .information fieldset .nav .links a {
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+footer hr {
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+  top: -30px;
+}
+footer .copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .copy p {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+}
