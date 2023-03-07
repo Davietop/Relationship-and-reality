@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="R&R-09.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +14,36 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Labrada:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e031052f8a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("DF4GLJ6WIuhZVcgor");
+      })();
+    </script>
   </head>
   <body>
     <nav>
@@ -23,7 +54,7 @@
       </section>
       <section class="link">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/Home_page/index.html">Home</a></li>
           <li><a href="">Courses</a></li>
           <li><a href="">About</a></li>
           <li><a href="/Contact/index.html">Contact</a></li>
@@ -34,5 +65,177 @@
         <a href="">Book a session</a>
       </section>
     </nav>
+
+    <main>
+      <section class="contact">
+        <h1>Contact</h1>
+        <p>Reach me by filling this form</p>
+      </section>
+
+      <section class="contact_type">
+        <section class="phone">
+          <fieldset>
+            <section class="number">
+              <img src="phone.png" alt="" />
+              <h3>Phone Number</h3>
+            </section>
+            <p>(+62) 8123 456 789</p>
+          </fieldset>
+        </section>
+        <section class="phone">
+          <fieldset>
+            <section class="number">
+              <img src="email.png" alt="" />
+              <h3>Email Address</h3>
+            </section>
+            <p>support@domain.com</p>
+          </fieldset>
+        </section>
+        <section class="phone">
+          <fieldset>
+            <section class="number">
+              <img src="address.png" alt="" />
+              <h3>Address</h3>
+            </section>
+            <!-- <p>(+62) 8123 456 789</p> -->
+            <p>Canggu, Badung Regency, Bali</p>
+          </fieldset>
+        </section>
+      </section>
+
+      <section class="contact_form">
+        <section id="contact">
+          <h1>Get In Touch</h1>
+
+          <section class="media">
+            <h3>Social Media:</h3>
+            <section class="socials">
+              <i class="fa-solid fa-envelope"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </section>
+          </section>
+        </section>
+
+        <fieldset id="form">
+          <form action="">
+            <section class="name">
+              <section class="first_name">
+                <label for="First_name"
+                  >First Name <i class="fa-solid fa-asterisk"></i
+                ></label>
+                <input
+                  type="text"
+                  name=""
+                  id="f_name"
+                  placeholder="First Name"
+                  required
+                />
+              </section>
+              <section class="last_name">
+                <label for="last_name"
+                  >Last Name <i class="fa-solid fa-asterisk"></i
+                ></label>
+                <input
+                  type="text"
+                  name=""
+                  id="l_name"
+                  placeholder="Last Name"
+                  required
+                />
+              </section>
+            </section>
+
+            <section class="e_address">
+              <label for="mail"
+                >Email Address <i class="fa-solid fa-asterisk"></i
+              ></label>
+              <input
+                type="email"
+                name=""
+                id="email"
+                placeholder="user@gmail.com"
+                required
+              />
+            </section>
+
+            <section class="message">
+              <label for="message"
+                >Questions <i class="fa-solid fa-asterisk"></i
+              ></label>
+
+              <textarea
+                name=""
+                id="question"
+                cols="30"
+                rows="10"
+                placeholder="What You Need Help With?"
+                required
+              ></textarea>
+            </section>
+
+            <button id="send" type="submit">Send Message</button>
+          </form>
+        </fieldset>
+      </section>
+    </main>
+
+    <article class="access">
+      <fieldset>
+        <h2>Subscribe to newsletter</h2>
+        <p>Get notified for our latest news</p>
+        <section class="signup">
+          <input type="text" name="" id="text" placeholder="Email Address" />
+          <button><a href="">Subscribe</a></button>
+        </section>
+      </fieldset>
+    </article>
+
+    <footer>
+      <section class="information">
+        <fieldset>
+          <section class="connect">
+            <h3>Connect</h3>
+            <section class="conp">
+              <p class="address">
+                Jalan Batu Mejan, Canggu, Badung Regency, Bali
+              </p>
+              <p>(+62) 8123 456 789</p>
+              <p>support@domain.com</p>
+            </section>
+          </section>
+          <section class="logo">
+            <img src="R&R-11.png" alt="" />
+            <section class="logo_text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus.
+              </p>
+            </section>
+            <section class="socials">
+              <i class="fa-solid fa-envelope"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </section>
+          </section>
+          <section class="nav">
+            <h3>Navigation</h3>
+
+            <section class="links">
+              <a href="About">About</a>
+              <a href="Contact">Contact</a>
+              <a href="Blog">Blog</a>
+            </section>
+          </section>
+        </fieldset>
+      </section>
+      <hr />
+      <section class="copy">
+        <p>Relationship & Reality</p>
+        <p>Copyright &copy 2023. All rights reserved.</p>
+      </section>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
